@@ -1,0 +1,1707 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+:root {
+    --text-color: white;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+
+
+}
+
+.menuawal {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 9999;
+    background: rgb(16, 6, 203);
+    background: linear-gradient(90deg, rgba(65, 10, 99, 1) 44%, rgba(75, 63, 251, 1) 81%);
+   
+
+}
+
+.menuawal .Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+.menuawal .Navbar .Pilihan {
+    display: flex;
+    list-style-type: none;
+   
+
+}
+
+@media screen and (max-width: 1000) {
+    .menuawal .Navbar .Pilihan {
+        display: flex;
+
+
+    }
+
+}
+
+
+
+.menuawal .Navbar .Pilihan li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.menuawal .Navbar .media-sosial a {
+    margin-left: 10px;
+
+    color: rgb(255, 255, 255);
+}
+
+.menuawal .Navbar .Pilihan li a:hover,
+.menuawal .Navbar .media-sosial a:hover {
+    color: rgb(43, 214, 226);
+}
+
+
+@keyframes Animasi {
+
+    0% {
+        background-color: rgb(60, 11, 255);
+
+    }
+
+    10% {
+        background-color: rgb(0, 133, 250);
+        ;
+    }
+
+    20% {
+        background-color: rgb(0, 246, 250);
+        ;
+    }
+
+}
+
+
+@media screen and (max-width:769px) {
+
+    .menuawal .Navbar .Pilihan {
+        overflow: hidden;
+        position: absolute;
+        display: block;
+        top: 50px;
+        margin-top: 180px;
+        flex-direction: column;
+        right: 70px;
+        background-color: rgb(117, 82, 255);
+        width: 80%;
+        height: 500px;
+        text-align: center;
+        transform: scale(1);
+        z-index: 99;
+        transition: 1s;
+        padding: 70px;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+
+    }
+
+    .menuawal .Navbar .Pilihan li {
+        font-size: 28px;
+        font-weight: 700px;
+        font-family: poppins, sans-serif;
+        gap: 10px;
+        flex-direction: column;
+        line-height: 100px;
+        border-bottom: 1px solid black;
+        border-width: 1px;
+
+
+
+    }
+
+
+
+}
+
+
+
+
+.Navbar .Logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.Navbar .Logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    display: flex;
+
+}
+
+@media screen and (max-width: 780px) {
+
+    .menuawal .Navbar .Pilihan {
+        position: absolute;
+        display: block;
+        top: 40px;
+        margin-top: 90px;
+        flex-direction: column;
+        left: 10%;
+        background-color: rgb(117, 82, 255);
+        width: 80%;
+        height: 450px;
+        text-align: center;
+        transform: scale(1);
+        z-index: 99;
+        transition: 1s;
+        padding: 30px;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+
+        opacity: 1;
+    }
+
+    .menuawal .Navbar .Pilihan li {
+        font-size: 15px;
+
+        font-weight: 700px;
+        font-family: poppins, sans-serif;
+        gap: 10px;
+        flex-direction: column;
+        line-height: 100px;
+        border-bottom: 1px solid black;
+        border-width: 1px;
+    }
+
+    .menuawal .Navbar .Menupilihan {
+        align-items: center;
+        position: absolute;
+        display: block;
+        top: 30px;
+        margin-top: 90px;
+        flex-direction: column;
+        left: 200px;
+        background-color: transparent;
+        width: 80%;
+        height: 450px;
+        text-align: center;
+        transform: translateX(100px);
+        opacity: 0;
+        padding: 70px;
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        -o-transform: translateX(100px);
+    }
+
+    .menuawal .Navbar .Menupilihan li {
+        display: flex;
+        align-items: center;
+        font-size: 0px;
+        font-weight: 600px;
+        font-family: poppins, sans-serif;
+        gap: 10px;
+        flex-direction: column;
+        line-height: 100px;
+        border-bottom: 1px solid transparent;
+        background-color: transparent;
+        border-width: 1px;
+
+    }
+
+    .menuawal .Navbar .media-sosial {
+        align-items: center;
+        display: flex;
+        margin-left: 20px;
+        gap: 15px;
+        font-size: 20px;
+
+    }
+
+    .menuawal .Navbar .media-sosial a {
+
+        justify-content: space-between;
+
+        color: rgb(255, 255, 255);
+    }
+
+    .Logo img {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+
+        margin-left: -40px;
+
+    }
+
+}
+
+
+@media screen and (min-width:781px) {
+
+    .menuawal .Navbar .media-sosial {
+        margin-left: 60px;
+        gap: 5px;
+        align-items: center;
+        display: flex;
+
+    }
+
+    .menuawal .Navbar .Pilihan {
+        margin-left: 105px;
+        gap: 30px;
+        font-size: 15px;
+        align-items: center;
+    }
+
+    .menuawal .Navbar .Pilihan li {
+        font-family: poppins, sans-serif;
+
+    }
+
+    .menuawal .Navbar .Logo {
+        margin-left: -40px;
+        align-items: center;
+
+    }
+
+}
+
+
+@media screen and (min-width:830px) {
+
+    .menuawal .Navbar .media-sosial {
+        margin-left: 70px;
+        gap: 5px;
+        align-items: center;
+        display: flex;
+        /*top: 50px;
+        margin-top: 180px;
+        flex-direction: column;
+        right: 70px;
+        background-color: rgb(117, 82, 255);
+        width: 80%;
+        height: 500px;
+        text-align: center;
+        transform: scale(1);
+        z-index: 99;
+        transition: 1s;
+        padding: 70px;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        */
+    }
+
+    .menuawal .Navbar .Pilihan {
+        margin-left: 115px;
+        gap: 30px;
+
+    }
+
+    .menuawal .Navbar .Logo {
+        margin-left: -40px;
+        align-items: center;
+
+    }
+
+    /* .menuawal .Navbar .Pilihan li {
+        font-size: 28px;
+        font-weight: 700px;
+        font-family: poppins, sans-serif;
+        gap: 10px;
+        flex-direction: column;
+        line-height: 100px;
+        border-bottom: 1px solid black;
+        border-width: 1px;
+    } */
+
+    /* .menuawal .Navbar .Menupilihan {
+        position: absolute;
+        display: block;
+        top: 50px;
+        margin-top: 140px;
+        flex-direction: column;
+        right: 0;
+        background-color: rgb(117, 82, 255);
+        width: 80%;
+        height: 500px;
+        text-align: center;
+        transform: translateX(900px);
+        transition: 1s;
+        z-index: 99;
+        padding: 70px;
+        -webkit-transform: translateX(900px);
+        -moz-transform: translateX(900px);
+        -ms-transform: translateX(900px);
+        -o-transform: translateX(900px);
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+    }
+
+    .menuawal .Navbar .Menupilihan li {
+        font-size: 28px;
+        font-weight: 700px;
+        font-family: poppins, sans-serif;
+        gap: 10px;
+        flex-direction: column;
+        line-height: 100px;
+        border-bottom: 1px solid black;
+        border-width: 1px;
+    } */
+}
+
+@media screen and (min-width:850px) {
+
+    .menuawal .Navbar .media-sosial {
+
+        align-items: center;
+        margin-left: 95px;
+        gap: 5px;
+        align-items: center;
+        display: flex;
+    }
+
+    .menuawal .Navbar .Pilihan {
+        margin-left: 135px;
+        font-size: 15px;
+        gap: 35px;
+
+    }
+
+    .menuawal .Navbar .Logo {
+        margin-left: -40px;
+        align-items: center;
+        align-items: center;
+
+    }
+
+
+}
+
+@media screen and (min-width:920px) {
+    .menuawal .Navbar .media-sosial {
+        align-items: center;
+        margin-left: 95px;
+        gap: 5px;
+        align-items: center;
+        display: flex;
+    }
+
+    .menuawal .Navbar .Pilihan {
+        margin-left: 155px;
+        font-size: 15px;
+        gap: 45px;
+    }
+
+    .menuawal .Navbar .Logo {
+        margin-left: -40px;
+        align-items: center;
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width:990px) {
+    .menuawal .Navbar .media-sosial {
+        align-items: center;
+        margin-left: 95px;
+        gap: 5px;
+        align-items: center;
+        display: flex;
+    }
+
+    .menuawal .Navbar .Pilihan {
+        margin-left: 175px;
+        font-size: 15px;
+        gap: 45px;
+    }
+
+    .menuawal .Navbar .Logo {
+        margin-left: -40px;
+        align-items: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .menuawal .Navbar .media-sosial {
+        align-items: center;
+        margin-left: 105px;
+        gap: 5px;
+        align-items: center;
+        display: flex;
+    }
+
+    .menuawal .Navbar .Pilihan {
+        margin-left: 180px;
+        font-size: 15px;
+        gap: 50px;
+    }
+
+    .menuawal .Navbar .Logo {
+        margin-left: -40px;
+        align-items: center;
+
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .menuawal .Navbar .media-sosial {
+        align-items: center;
+        margin-left: 115px;
+        gap: 5px;
+        align-items: center;
+        display: flex;
+    }
+
+    .menuawal .Navbar .Pilihan {
+        margin-left: 200px;
+        font-size: 15px;
+        gap: 50px;
+    }
+
+    .menuawal .Navbar .Logo {
+        margin-left: -40px;
+        align-items: center;
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    .menuawal .Navbar .media-sosial {
+        align-items: center;
+        margin-left: 175px;
+        gap: 5px;
+        align-items: center;
+        display: flex;
+    }
+
+    .menuawal .Navbar .Pilihan {
+        margin-left: 250px;
+        font-size: 15px;
+        gap: 50px;
+        
+        
+    }
+
+    .menuawal .Navbar .Logo {
+        margin-left: -40px;
+        align-items: center;
+        align-items: center;
+    }
+}
+
+
+
+@media screen and (max-width:300px) {
+    .menuawal .Navbar .Pilihan {
+        position: absolute;
+        display: block;
+        top: 20px;
+        margin-top: 50px;
+        flex-direction: column;
+
+        background-color: rgb(117, 82, 255);
+        width: 100%;
+        height: 600px;
+        text-align: center;
+        transform: scale(1);
+        z-index: 99;
+        transition: 1s;
+        padding: 10px;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+    }
+
+    .menuawal .Navbar .Pilihan li {
+        font-size: 10px;
+
+        font-weight: 700px;
+        font-family: poppins, sans-serif;
+        gap: 10px;
+        flex-direction: column;
+        line-height: 70px;
+        border-bottom: 1px solid black;
+        border-width: 1px;
+    }
+
+    .menuawal .Navbar .Pilihan li a {
+        font-size: 10px;
+
+        font-weight: 700px;
+        font-family: poppins, sans-serif;
+        gap: 10px;
+        flex-direction: column;
+        line-height: 30px;
+        border-bottom: 1px solid black;
+        border-width: 1px;
+    }
+
+    .menuawal .Navbar .Menupilihan {
+        position: absolute;
+        display: block;
+        top: 30px;
+        margin-top: 90px;
+        flex-direction: column;
+        left: 200px;
+        background-color: rgb(117, 82, 255);
+        width: 80%;
+        height: 200px;
+        text-align: center;
+        transform: scale(0);
+        transition: 1s;
+        z-index: 99;
+        padding: 70px;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+    }
+
+    .menuawal .Navbar .Menupilihan li {
+        font-size: 15px;
+        font-weight: 600px;
+        font-family: poppins, sans-serif;
+        gap: 10px;
+        flex-direction: column;
+        line-height: 50px;
+        border-bottom: 1px solid black;
+        border-width: 1px;
+    }
+
+
+    .menuawal .Navbar .media-sosial {
+        display: flex;
+        margin-left: 30px;
+
+    }
+
+    .menuawal .Navbar .media-sosial a {
+
+        justify-content: space-between;
+
+        color: rgb(255, 255, 255);
+    }
+
+    .Logo img {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+
+        margin-left: -40px;
+
+    }
+
+}
+
+
+
+@media screen and (max-width:400px) {
+
+    .menuawal .Navbar .Pilihan {
+        position: absolute;
+        display: block;
+        top: 50px;
+        margin-top: 70px;
+        flex-direction: column;
+        right: 0;
+        background-color: rgb(117, 82, 255);
+        width: 80%;
+        height: 260px;
+        text-align: center;
+        transform: scale(1);
+        z-index: 99;
+        transition: 1s;
+        padding: 30px;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        opacity: 1;
+    }
+
+    .menuawal .Navbar .Pilihan li {
+        font-size: 12px;
+
+        font-weight: 700px;
+        font-family: poppins, sans-serif;
+        gap: 10px;
+        flex-direction: column;
+        line-height: 50px;
+        border-bottom: 1px solid black;
+        border-width: 1px;
+    }
+
+    .menuawal .Navbar .Menupilihan {
+        align-items: center;
+        position: absolute;
+        display: block;
+        top: 30px;
+        margin-top: 90px;
+        flex-direction: column;
+        left: 200px;
+        background-color: transparent;
+        width: 80%;
+        height: 450px;
+        text-align: center;
+        transform: scale(0);
+        opacity: 0;
+        padding: 70px;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+    }
+
+    .menuawal .Navbar .Menupilihan li {
+        display: flex;
+        align-items: center;
+        font-size: 0px;
+        font-weight: 600px;
+        font-family: poppins, sans-serif;
+        gap: 10px;
+        flex-direction: column;
+        line-height: 100px;
+        border-bottom: 1px solid black;
+        background-color: transparent;
+        border-width: 1px;
+        opacity: 0;
+    }
+
+    .menuawal .Navbar .media-sosial {
+        align-items: center;
+        display: flex;
+        margin-left: 30px;
+        gap: 5px;
+
+    }
+
+
+    .menuawal .Navbar .media-sosial a {
+
+        justify-content: space-between;
+
+        color: rgb(255, 255, 255);
+    }
+
+    .Logo img {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+
+        margin-left: -40px;
+
+    }
+
+}
+
+
+@media screen and (max-width:500px) {
+
+    .menuawal .Navbar .Pilihan {
+        position: absolute;
+        display: block;
+        top: 50px;
+        margin-top: 70px;
+        flex-direction: column;
+        right: 0;
+        background-color: rgb(117, 82, 255);
+        width: 80%;
+        height: 260px;
+        text-align: center;
+        transform: scale(1);
+        z-index: 99;
+        transition: 1s;
+        padding: 30px;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        opacity: 1;
+    }
+
+    .menuawal .Navbar .Pilihan li {
+        font-size: 12px;
+
+        font-weight: 700px;
+        font-family: poppins, sans-serif;
+        gap: 10px;
+        flex-direction: column;
+        line-height: 50px;
+        border-bottom: 1px solid black;
+        border-width: 1px;
+    }
+
+    .menuawal .Navbar .Menupilihan {
+        align-items: center;
+        position: absolute;
+        display: block;
+        top: 30px;
+        margin-top: 90px;
+        flex-direction: column;
+        left: 200px;
+        background-color: transparent;
+        width: 80%;
+        height: 450px;
+        text-align: center;
+        transform: scale(0);
+        opacity: 0;
+        padding: 70px;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+    }
+
+    .menuawal .Navbar .Menupilihan li {
+        display: flex;
+        align-items: center;
+        font-size: 0px;
+        font-weight: 600px;
+        font-family: poppins, sans-serif;
+        gap: 10px;
+        flex-direction: column;
+        line-height: 100px;
+        border-bottom: 1px solid black;
+        background-color: transparent;
+        border-width: 1px;
+        opacity: 0;
+    }
+
+    .menuawal .Navbar .media-sosial {
+        align-items: center;
+        display: flex;
+        margin-left: 30px;
+        gap: 5px;
+
+    }
+
+
+    .menuawal .Navbar .media-sosial a {
+
+        justify-content: space-between;
+
+        color: rgb(255, 255, 255);
+    }
+
+    .Logo img {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+
+        margin-left: -40px;
+
+    }
+
+}
+
+
+
+.header {
+    background: rgb(16, 6, 203);
+    background: linear-gradient(90deg, rgba(65, 10, 99, 1) 44%, rgba(75, 63, 251, 1) 81%);
+    width: 100%;
+    height: 100%;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.header .container {
+    text-align: center;
+}
+
+.header .container .content img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.header .content .element {
+    color: rgb(0, 246, 250);
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.header .content .mengetik {
+    color: white;
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+
+
+
+}
+
+.Deskripsi {
+    color: white;
+    opacity: 0.5;
+    margin-bottom: 40px;
+    max-width: 100%;
+    text-align: center;
+    
+}
+
+
+.content img {
+    --animate-delay: 0.9s;
+}
+
+.content .Tombol {
+
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: blue;
+    width: 250px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    -o-border-radius: 5px;
+
+
+}
+
+.Tombol:hover {
+    background: rgb(65, 10, 99);
+    background: linear-gradient(90deg, rgba(65, 10, 99, 1) 44%, rgba(75, 63, 251, 1) 81%);
+
+}
+
+
+
+
+.Skills {
+
+
+    width: 100%;
+
+
+    margin-top: 200px;
+
+
+
+
+}
+
+
+.Skills2 {
+    margin-top: 40px;
+    flex-wrap: wrap;
+    color: white;
+    width: 100%;
+    gap: 40px;
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+
+}
+
+.Judul h2 {
+    margin-bottom: 40px;
+    color: white;
+}
+
+.Judul {
+    margin-bottom: 40px;
+}
+
+.Skills2 img {
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 15%;
+    display: inline;
+    border: 2px solid white;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.Skills2 img:hover {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+}
+
+.Profile {
+    width: 100%;
+    margin-top: 150px;
+}
+
+.Profile .Gambar {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    gap: 100px;
+}
+
+.Profile .Gambar img {
+    width: 50%;
+
+
+}
+
+.Profile h2 {
+    margin-bottom: 50px;
+    color: white;
+}
+
+.Profile .Gambar p {
+    color: white;
+    text-align: left;
+    max-width: fit-content;
+    max-width: 450px;
+
+    letter-spacing: 1;
+}
+
+.Socialmedia {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.Socialmedia a {
+    color: white;
+}
+
+.Socialmedia a:hover {
+    color: rgb(21, 255, 232);
+}
+
+@media screen and (max-width: 300px) {
+
+    .Profile .Gambar {
+        display: block;
+
+    }
+
+    .Profile .Gambar img {
+        width: 100%;
+    }
+
+    .Profile .Gambar p {
+        margin-top: 40px;
+        text-align: left;
+        font-size: 12px;
+        padding-right: 60px;
+        max-width: 100%;
+
+    }
+
+    .Socialmedia {
+        margin-top: 20px;
+    }
+
+    .Socialmedia a {
+        font-size: 15px;
+    }
+
+    .Skills2 img {
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .Profile .Gambar {
+        display: block;
+
+    }
+
+    .Profile .Gambar img {
+        width: 50%;
+    }
+
+    .Profile .Gambar p {
+        margin-top: 40px;
+        text-align: left;
+        font-size: 13px;
+        padding-right: 20px;
+        max-width: 100%;
+
+    }
+
+    .Socialmedia {
+        margin-top: 20px;
+    }
+
+    .Socialmedia a {
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .Profile .Gambar {
+        display: block;
+
+    }
+
+    .Profile .Gambar img {
+        width: 50%;
+    }
+
+    .Profile .Gambar p {
+        margin-top: 40px;
+        text-align: justify;
+        font-size: 13px;
+        padding-right: 20px;
+        max-width: 100%;
+
+
+    }
+
+    .Socialmedia {
+        margin-top: 20px;
+    }
+
+    .Socialmedia a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .Profile .Gambar {
+        display: block;
+
+    }
+
+    .Profile .Gambar img {
+        width: 50%;
+    }
+
+    .Profile .Gambar p {
+        margin-top: 40px;
+        text-align: left;
+        font-size: 13px;
+        padding-right: 40px;
+        max-width: 450px;
+
+
+    }
+
+    .Socialmedia {
+        margin-top: 20px;
+    }
+
+    .Socialmedia a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .Profile .Gambar {
+        display: block;
+
+    }
+
+    .Profile .Gambar img {
+        width: 50%;
+    }
+
+    .Profile .Gambar p {
+        margin-top: 40px;
+        text-align: left;
+        font-size: 13px;
+        padding-right: 40px;
+        max-width: 450px;
+    }
+
+    .Socialmedia {
+        margin-top: 20px;
+    }
+
+    .Socialmedia a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    .Profile .Gambar {
+        display: block;
+
+    }
+
+    .Profile .Gambar img {
+        width: 50%;
+    }
+
+    .Profile .Gambar p {
+        margin-top: 40px;
+        text-align: left;
+        font-size: 13px;
+        padding-right: 30px;
+        max-width: 450px;
+    }
+
+    .Socialmedia {
+        margin-top: 20px;
+    }
+
+    .Socialmedia a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .Profile .Gambar {
+        display: block;
+    }
+
+    .Profile .Gambar img {
+        width: 50%;
+    }
+
+    .Profile .Gambar p {
+        margin-top: 40px;
+        text-align: left;
+        font-size: 15px;
+        padding-right: 40px;
+        max-width: 450px;
+        margin-left: 100px;
+    }
+
+    .Socialmedia {
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+
+    .Socialmedia a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .Profile .Gambar {
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+        gap: 10px;
+    }
+
+    .Profile .Gambar img {
+        width: 100%;
+    }
+
+    .Profile h2 {
+        margin-bottom: 50px;
+        color: white;
+    }
+
+    .Profile .Gambar p {
+        color: white;
+        text-align: left;
+
+        max-width: 450px;
+        font-size: 15px;
+        font-weight: 500;
+
+
+    }
+
+    .Socialmedia a {
+        color: white;
+
+    }
+
+    .Socialmedia a:hover {
+        color: rgb(21, 255, 232);
+    }
+
+    .Socialmedia {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .Socialmedia a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .Profile .Gambar {
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+        gap: 10px;
+    }
+
+    .Profile .Gambar img {
+        width: 100%;
+    }
+
+    .Profile h2 {
+        margin-bottom: 50px;
+        color: white;
+    }
+
+    .Profile .Gambar p {
+        color: white;
+        text-align: left;
+        max-width: 450px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .Socialmedia a {
+        color: white;
+    }
+
+    .Socialmedia a:hover {
+        color: rgb(21, 255, 232);
+    }
+
+    .Socialmedia {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .Socialmedia a {
+        font-size: 15px;
+
+    }
+}
+
+.LEBRARNYA {
+    width: 100%;
+    margin-top: 200px;
+}
+
+.LEBRARNYA h2 {
+    margin-bottom: 100px;
+    color: white;
+}
+
+.LEBRARNYA .Portfoliosert {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.Gambarportofolio {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(255, 253, 253);
+    background-color: aqua;
+
+
+}
+
+
+@media screen and (max-width:300px) {
+    .LEBRARNYA {
+        width: 100%;
+        margin-top: 200px;
+    }
+
+    .LEBRARNYA h2 {
+        margin-bottom: 100px;
+        color: white;
+    }
+
+    .LEBRARNYA .Portfoliosert {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .Gambarportofolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .Portfoliosert .Gambarportofolio img {
+        width: 100%;
+        object-fit: cover;
+        border: 1px solid black;
+
+    }
+
+    .Gambarportofolio .textarea {
+        background-color: white;
+        max-width: 100%;
+        
+        
+        text-align: justify;
+    }
+    
+    .Gambarportofolio .textarea p {
+        margin-top: 15px;
+        max-width: 100%;
+       font-size: 10px;
+       padding: 1px;
+        
+    }
+
+
+
+}
+
+
+.Portfoliosert .Gambarportofolio img {
+    width: 350px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.Gambarportofolio .textarea {
+    background-color: white;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 14px;
+    max-width: 350px;
+    text-align: justify;
+}
+
+.Gambarportofolio .textarea span {
+    margin-top: 12px;
+    padding-left: 10px;
+    max-width: 300px;
+}
+
+
+@media screen and (max-width:400px) {
+    .LEBRARNYA {
+        width: 100%;
+        margin-top: 200px;
+    }
+
+    .LEBRARNYA h2 {
+        margin-bottom: 100px;
+        color: white;
+    }
+
+    .LEBRARNYA .Portfoliosert {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .Gambarportofolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .Portfoliosert .Gambarportofolio img {
+        width: 100%;
+        object-fit: cover;
+        border: 1px solid black;
+
+    }
+
+    .Gambarportofolio .textarea {
+        background-color: white;
+        max-width: 100%;
+        
+        
+        text-align: justify;
+    }
+    
+    .Gambarportofolio .textarea p {
+        margin-top: 15px;
+        max-width: 100%;
+       font-size: 10px;
+       padding: 1px;
+        
+    }
+
+
+}
+
+
+@media screen and (max-width:700px) {
+    .LEBRARNYA {
+        width: 100%;
+        margin-top: 200px;
+    }
+
+    .LEBRARNYA h2 {
+        margin-bottom: 100px;
+        color: white;
+    }
+
+    .LEBRARNYA .Portfoliosert {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .Gambarportofolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+        border: 5px solid black;
+    }
+
+    .Portfoliosert .Gambarportofolio img {
+        width: 100%;
+        object-fit: cover;
+        border: 1px solid black;
+
+    }
+
+    .Gambarportofolio .textarea {
+        background-color: white;
+        max-width: 100%;
+        
+        font-size: 13px;
+padding: 12px;
+        text-align: justify;
+        border: 2px solid black;
+    }
+
+    .Gambarportofolio .textarea span{
+        margin-top: 15px;
+        padding-left: 10px;
+        max-width: 300px;
+    }
+
+
+
+}
+
+@media screen and (max-width:600px) {
+    .LEBRARNYA {
+        width: 100%;
+        margin-top: 200px;
+    }
+
+    .LEBRARNYA h2 {
+        margin-bottom: 100px;
+        color: white;
+    }
+
+    .LEBRARNYA .Portfoliosert {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .Gambarportofolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .Portfoliosert .Gambarportofolio img {
+        width: 100%;
+        object-fit: cover;
+        border: 1px solid black;
+
+    }
+
+    .Gambarportofolio .textarea {
+        background-color: white;
+        max-width: 100%;
+        
+    }
+    
+    .Gambarportofolio .textarea p {
+        font-size: 10px;
+    
+        text-align: justify;
+    
+       
+        max-width: 100%;
+    }
+
+
+
+}
+
+
+
+@media screen and (min-width:800px) {
+    .LEBRARNYA {
+        width: 100%;
+        margin-top: 200px;
+    }
+
+    .LEBRARNYA h2 {
+        margin-bottom: 100px;
+        color: white;
+    }
+
+    .LEBRARNYA .Portfoliosert {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 0;
+    }
+
+    .Gambarportofolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+        width: 90%;
+    }
+
+    .Portfoliosert .Gambarportofolio img {
+        width: 100%;
+        object-fit: cover;
+        border: 1px solid black;
+    }
+
+    .Gambarportofolio .textarea {
+        background-color: white;
+        max-width: 100%;
+      
+       
+        text-align: justify;
+    }
+
+    .Gambarportofolio .textarea p {
+       font-size: 10px;
+
+    }
+}
+@media screen and (min-width: 700px) {
+    .LEBRARNYA {
+      width: 100%;
+      margin-top: 200px;
+    }
+    .LEBRARNYA h2 {
+      margin-bottom: 100px;
+      color: white;
+    }
+    .LEBRARNYA .Portfoliosert {
+      display: flex;
+      flex-wrap: wrap; /* Mengatur agar konten beralih ke baris berikutnya jika tidak cukup ruang */
+      justify-content: space-between; /* Membuat jarak antara konten */
+    }
+    .Gambarportofolio {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: rgb(255, 255, 255);
+      width: calc(33.45% - 10px);
+    }
+    .Portfoliosert .Gambarportofolio img {
+      width: 100%;
+      object-fit: cover;
+      border: 1px solid black;
+    }
+    .Gambarportofolio .textarea {
+      background-color: white; 
+    }
+    .Gambarportofolio .textarea p{
+        max-width: 100%;
+        text-align: justify;
+        padding: 1px;
+        font-size: 10px;
+    }
+  }
+  
